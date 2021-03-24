@@ -11,23 +11,23 @@
 }
 
 .d3 {
-	margin: 0px;
-	padding: 0px;
+	float: left;
 	display: inline-block;
 	height: 400px;
 	width: 400px;
 	background-color: orange;
 }
 .d4 {
-	margin: 0px;
-	padding: 0px;
+	float: left;
 	display: inline-block;
 	width: 250px;
 	height: 400px;
 	background-color: green;
 }
 .d5 {
+	float: left;
 	height: 80px;
 	width: 650px;
 	background-color: grey;
 }
+
