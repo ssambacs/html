@@ -1,0 +1,30 @@
+body{
+	text-align:center;
+}
+
+.d1{
+	display: inline-block;
+}
+
+.t1{
+	background-color: orange;
+	color: darkorange;
+	width: 600px;
+	height: 50px;
+}
+
+.t2{
+	display:none;
+}
+
+.t3{
+	visibility:hidden;
+}
+
+.body{
+		color: darkgrey;
+		background-color: khaki !important;
+		width: 600px;
+		height: 200px;
+		border: 20px dotted pink;
+}

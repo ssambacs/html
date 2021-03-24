@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	body {
+		text-align: center;	
+	}
+	.d1 {
+		display: inline-block;
+		width: 50px;
+	}
+	.aqua {
+		background-color: aqua;
+	}
+	.crimson {
+		background-color: crimson;
+	}
+	.darkcyan {
+		background-color: darkcyan;
+	}
+	.darkornge {
+		background-color: orange;
+	}
+	
+	.d1 div{
+		/*클래스가 d1인 태그 하위의 모든 div 를 선택 */
+		display: inline-block;
+		width: 580px;
+		height: 30px;
+		text-align: center;
+		/* cursor:hand; */
+		margin-bottom: 10px;
+	}
+	.d1 > div{
+		/* 클래스가 d1인 태그 하위의 모든 div 자식태그를 선택 */
+	}
+	
+	.aqua:hover{
+		background-color: yellow;
+	}
+	
+	.btn{
+		cusor: pointer;
+	}
+	
+	.btn:active {
+		color: red;
+		font-weight: bold;
+		font-size: 6pt;
+	}
+	
+</style>	
+</head>
+<body>
+	<div class="d1">
+		<div class="btn aqua">버튼1</div>
+<!-- 		<div class="btn aqua">버튼1<div>하위태그</div></div>  -->
+		<div class="btn crimson">버튼2</div>
+		<div class="btn darkcyan">버튼3</div>
+		<div class="btn darkornge">버튼4</div>
+	</div>
+</body>
+</html>

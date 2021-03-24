@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+/* 
+css 문서에서의 주석 
+
+<!--
+	이것은 css에서는 주석 처리가 안된다
+-->
+*/
+	/* 
+		css 형식
+			
+			선택자{
+				속성이름: 속성값;
+				...
+			}
+			
+			이때 선택자를 태그이름을 사용하는 방법이 있다.
+				형식
+					태그이름{
+						속성: 속성값;
+						...
+					}
+	 */
+	body{
+	 	text-align:center;
+	 }
+	 
+	h1 {
+		display: inline-block;
+		color: blue; /* 문자 색의 속성
+						속성값
+							w3에서 정의해놓은 칼라 이름을 사용하는 방법
+							rgb(0~255사이의 숫자,0~255사이의 숫자,0~255사이의 숫자) 
+							rgba(0~255사이의 숫자,0~255사이의 숫자,0~255사이의 숫자, 0~1 사이의 실수 알파값) 
+							#16진수코드 6개(0-9a-f)
+							#16진수코드3 */
+		background-color: orange; /* 배경색 속성 */	
+		width: 600px; /* 가로 너비 속성  */
+		height: 50px;/* 세로 높이 속성, 사용가능 단위는 px(픽셀),
+						 %(상위태그의 속성값을 100%로 한다.)
+						 em(검색요망) */
+		text-align:center; /* 가로 정렬에 대한 속성
+								center, right, left */
+	}
+	
+	p{
+		display: inline-block;
+		color: darkgrey;
+		background-color: khaki;
+		width: 600px;
+		height: 200px;
+		border: 20px dotted pink;
+		/* 
+			border - 태그의 테두리를 설정하는 속성
+				형식
+					border: 테두리두께 라인형식 라인색상;
+						라인형식은
+							solid
+							dashed
+							dotted
+		 */
+	}
+	
+	/* 
+		아이디로 태그를 선택하는 방법
+			선택자 부분에 #아이디이름 으로 선택한다.
+			
+		클래스로 선택하는 방법
+			.클래스이름
+	 */
+	 #second{
+	 	display:none;
+	 	/* 
+	 		마치 태그가 문서에 없었던것처럼
+	 		위치에서 영역까지 사라지는 속성...
+	 	 */
+	 }
+	 
+	 #third{
+	 	/*  visibility:hidden; */
+	 	/* 원래 태그의 위치의 공간은 남겨놓고 화면에서 보이는 것만 안되게... */
+	 }
+	 
+</style>
+</head>
+<body>
+	<h1>CSS 1st File</h1>
+	<h1 id="second">CSS 1st File -2</h1>
+	<h1 id="third">CSS 1st File -3</h1>
+	<p>이 문서는 css 첫번째 파일</p>
+</body>
+</html>

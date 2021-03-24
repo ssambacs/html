@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Selector</title>
+<style>
+	input:enabled {
+		background-color: white;
+	}
+	
+	input:disabled {
+		background-color: darkgrey;
+	}
+	input:focus {
+		background-color: orange;
+	}
+	
+	h2{
+		margin:0px;
+	}
+	
+	h2:first-child {
+		color: red;
+	}
+	#h2:last-child{
+	/* 
+		형제중 막내인 아이디가 h2인 태그
+	 */
+	}
+	input:last-child {
+	
+	/* 
+		input 태그중 형제중 마지막 태그
+	 */
+		border: 3px solid red;
+	}
+	
+	input:nth-child(4) {
+	/* 형제중 넷째인 input 태그 */
+		border: 5px solid crimsom;
+	}
+</style>
+</head>
+<body>
+	<h2>사용가능</h2>
+	<input/><!-- xhml 표기법 -->
+	<h2 id="h2">사용불가능</h2>
+	<input disabled />
+	
+	<div>
+		<h2>사용가능</h2>
+		<input/><!-- xhml 표기법 -->
+		<h2 id="h2">사용불가능</h2>
+		<h2 id="h2">사용불가능</h2>
+		<input disabled />
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+.d1 {	
+	width: 650px;
+	height: 120px;
+	background-color: lightgrey;
+}
+.d2 {
+	width: 650px;
+	height: 30px;
+	background-color: blue;
+}
+
+.d3 {
+	margin: 0px;
+	padding: 0px;
+	display: inline-block;
+	height: 400px;
+	width: 400px;
+	background-color: orange;
+}
+.d4 {
+	margin: 0px;
+	padding: 0px;
+	display: inline-block;
+	width: 250px;
+	height: 400px;
+	background-color: green;
+}
+.d5 {
+	height: 80px;
+	width: 650px;
+	background-color: grey;
+}
